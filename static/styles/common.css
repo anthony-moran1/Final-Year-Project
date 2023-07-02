@@ -1,0 +1,21 @@
+.hint-anchor {
+    font-weight: bold;
+    color:rgb(164, 212, 255);
+}
+
+.hint-text {
+    display: none;
+    position: absolute;
+    padding: 15px;
+    background-color: #333333cc;
+    z-index: 100;
+}
+
+.error {
+    color: red;
+}
+
+#background {
+    position: absolute;
+    z-index: -1;
+}

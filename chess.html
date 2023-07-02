@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/chess.css">
+    <link rel="stylesheet" href="./static/styles/common.css">
+    <title>Am Chess</title>
+</head>
+<body>
+    <nav><h1><a href="./">AM Chess</a></h1></nav>
+    <main>
+        <div class="text">
+            <div id="Prompt">
+                <span id="turn-text">Turn</span>
+                <span id="check-text" class="hint-anchor"></span>
+            </div>
+            <div id="join-text">Join with <a id="join-link" href="./">Link</a> or Code: <p id="join-code-text"></p></div>
+            <p id="no-server-text" style="text-align:center; display:none">The server is currently off :(<br>You will be directed back to the home page shortly...</p>
+        </div>
+        <div id="CanvasContainer">
+            <canvas id="ChessBoard"></canvas>
+            <div id="PromotionPanel" style="display:none">
+                <canvas id="pp_queen" class="pp-piece"></canvas>
+                <canvas id="pp_rook" class="pp-piece"></canvas>
+                <canvas id="pp_knight" class="pp-piece"></canvas>
+                <canvas id="pp_bishop" class="pp-piece"></canvas>
+            </div>
+        </div>
+    </main>
+    <a id="reconnect-link" href="./chess.html?join=" style="display: none">Reconnect</a>
+    <img id="ImagePieces" src="./static/images/Chess_Pieces_Sprite.svg" style="display: none">
+    <script src="static/scripts/chessBackground.js"></script>
+    <script type="module" src="./static/scripts/chess.js"></script>
+
+    <p id="checkDefinitionText" class="hint-text">Check means that a piece is attacking the king and he needs to get out of danger</p>
+    <p id="notYourTurnText" class="hint-text">It is not your turn yet</p>
+</body>
+</html>
