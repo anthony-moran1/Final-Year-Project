@@ -1,6 +1,9 @@
 # Final-Year-Project
 A Chess Web App, developed for my Final Year Project
 
+An online version can be accessed via the link: https://anthony-moran.github.io/Final-Year-Project/
+(Requires 2 people and an internet connection)
+
 ## Requirements
 - Python chess module
 - Python websockets module
